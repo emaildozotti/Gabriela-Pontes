@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gabriela Salum Pontes | Psicologia Clínica</title>
+  <meta name="description" content="Um espaço de psicoterapia ética e acolhedora para você fortalecer sua autoestima.">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Cormorant Garamond (Serif) & Inter (Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Wistia Video Scripts -->
+  <script src="https://fast.wistia.com/player.js" async></script>
+  <script src="https://fast.wistia.com/embed/b40zvo7loh.js" async type="module"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fafaf9;
+      /* stone-50 */
+      color: #1c1917;
+      /* stone-900 */
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Cormorant Garamond', serif;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Wistia Player Placeholder */
+    wistia-player[media-id='b40zvo7loh']:not(:defined) {
+      background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/b40zvo7loh/swatch');
+      display: block;
+      filter: blur(5px);
+      padding-top: 176.67%;
+    }
+
+    .premium-highlight {
+      position: relative;
+      display: inline;
+      font-weight: 600;
+      color: #1c1917;
+      /* stone-900 */
+    }
+
+    .premium-highlight::after {
+      content: "";
+      position: absolute;
+      bottom: 2px;
+      left: -2px;
+      right: -2px;
+      height: 30%;
+      background: linear-gradient(90deg, #e7e5e4, #d6d3d1);
+      /* stone-200 to stone-300 */
+      z-index: -1;
+      opacity: 0.7;
+      border-radius: 2px;
+    }
+  </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.34.0"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>
