@@ -233,11 +233,13 @@ const App: React.FC = () => {
               <h2 className="text-3xl md:text-5xl font-serif text-stone-900 mb-8">
                 {formatText(COPY.about.title)}
               </h2>
-              {COPY.about.paragraphs.map((para, i) => (
-                <p key={i} className="text-stone-600 text-lg font-light leading-relaxed">
-                  {formatText(para)}
-                </p>
-              ))}
+              <div className="space-y-6">
+                {COPY.about.paragraphs.map((para, i) => (
+                  <p key={i} className="text-stone-600 text-lg font-light leading-relaxed">
+                    {formatText(para)}
+                  </p>
+                ))}
+              </div>
             </FadeIn>
           </div>
 
