@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Play, Check, ChevronDown, ChevronUp, MessageCircle, Clock, Heart } from 'lucide-react';
+import { Play, Check, ChevronDown, ChevronUp, MessageCircle, Clock, Heart, Quote } from 'lucide-react';
 import { COPY } from './constants';
 import { FadeIn } from './components/FadeIn';
 import { Button } from './components/Button';
@@ -259,6 +259,41 @@ const App: React.FC = () => {
         </div>
       </Section>
 
+      {/* TESTIMONIALS */}
+      <Section id="testimonials" className="bg-stone-50">
+        <div className="text-center max-w-3xl mx-auto mb-16">
+          <FadeIn>
+            <h2 className="text-3xl md:text-5xl font-serif text-stone-900 mb-6">
+              {formatText(COPY.testimonials.title)}
+            </h2>
+          </FadeIn>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {COPY.testimonials.items.map((item, idx) => (
+            <FadeIn key={idx} delay={idx * 0.2} direction="up" className="bg-white p-8 md:p-10 shadow-sm border border-stone-100 flex flex-col relative overflow-hidden group hover:shadow-md transition-shadow">
+              <Quote className="absolute -top-2 -right-2 text-stone-100 w-24 h-24 -rotate-12 group-hover:text-stone-200/50 transition-colors" />
+              <div className="relative z-10 flex flex-col h-full">
+                <div className="mb-6">
+                  {[...Array(5)].map((_, i) => (
+                    <span key={i} className="text-stone-300 text-xs">★</span>
+                  ))}
+                </div>
+                <p className="text-stone-700 italic font-light leading-relaxed mb-8 flex-grow">
+                  "{item.text}"
+                </p>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 font-serif font-bold text-sm">
+                    {(item as any).initials}
+                  </div>
+                  <div className="text-xs uppercase tracking-widest text-stone-400 font-bold">Paciente</div>
+                </div>
+              </div>
+            </FadeIn>
+          ))}
+        </div>
+      </Section>
+
       {/* 6. HOW IT WORKS */}
       <Section id="how-it-works" className="bg-stone-900 text-stone-200">
         <FadeIn className="mb-16">
@@ -319,7 +354,8 @@ const App: React.FC = () => {
             </p>
           </FadeIn>
           <FadeIn delay={0.4} direction="up">
-            <Button onClick={handleWhatsAppClick} className="shadow-2xl shadow-stone-300 scale-105">
+            <Button variant="whatsapp" onClick={handleWhatsAppClick} className="shadow-2xl shadow-green-200 scale-105 flex items-center justify-center gap-2 mx-auto">
+              <MessageCircle size={20} />
               {COPY.finalCta.button}
             </Button>
           </FadeIn>

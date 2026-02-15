@@ -76,6 +76,23 @@ export const COPY = {
   finalCta: {
     title: "Se você sente que ==não consegue mais seguir sozinha==, a terapia pode ser o começo.",
     text: "Não deixe sua saúde emocional para depois. O primeiro passo para se ==sentir segura== começa agora.",
-    button: "CLIQUE AQUI PARA AGENDAR SUA CONVERSA INICIAL"
+    button: "AGENDAR MEU HORÁRIO"
+  },
+  testimonials: {
+    title: "O que dizem as mulheres que ==romperam o silêncio.==",
+    items: [
+      {
+        initials: "M.C.",
+        text: "Eu tinha muito medo de ser julgada e por isso guardava tudo para mim. No começo achei que não ia conseguir falar, mas a Gabriela me deixou tão à vontade que o silêncio que me sufocava foi dando lugar a uma paz que eu não sentia há anos. É um alívio ser ouvida sem filtros."
+      },
+      {
+        initials: "A.S.",
+        text: "Sempre achei que terapia fosse algo místico ou que me diriam o que fazer. Fiquei surpresa com a profundidade e o respeito. Não foi uma mudança da noite para o dia, mas hoje eu consigo me olhar no espelho com muito mais gentileza e colocar limites onde antes eu só aceitava."
+      },
+      {
+        initials: "R.P.",
+        text: "A timidez sempre foi minha maior barreira. Cheguei a desistir de outras tentativas por me sentir exposta demais. Com a Gabi foi diferente. Ela respeitou meu tempo, não me pressionou e hoje eu sinto que recuperei uma parte de mim que estava escondida atrás do medo."
+      }
+    ]
   }
 };
