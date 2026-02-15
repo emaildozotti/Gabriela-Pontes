@@ -79,7 +79,7 @@ const App: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
 
             {/* Left Column: Text Content */}
-            <div className="space-y-8 md:space-y-10 text-left order-2 md:order-1">
+            <div className="space-y-8 md:space-y-10 text-left">
               <FadeIn delay={0.2} direction="right">
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight text-stone-900">
                   {formatText(COPY.header.headline)}
@@ -102,7 +102,7 @@ const App: React.FC = () => {
             </div>
 
             {/* Right Column: Key Image */}
-            <div className="order-1 md:order-2 flex justify-center">
+            <div className="flex justify-center">
               <FadeIn delay={0.4} direction="left" className="relative w-full max-w-lg">
                 {/* Decorative element */}
                 <div className="absolute -top-6 -right-6 w-32 h-32 bg-stone-200/50 rounded-full -z-10 blur-2xl"></div>
